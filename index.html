@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campelo Branding — Design & Marketing</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              forest: '#1C352D',
+              offwhite: '#FAFAF8',
+              card: '#FFFFFF',
+              muted: '#6E726B',
+            }
+          },
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-offwhite text-brand-forest font-sans antialiased selection:bg-brand-forest selection:text-brand-offwhite min-h-screen flex flex-col justify-between">
+
+  <!-- CABEÇALHO -->
+  <header class="sticky top-0 z-40 bg-brand-offwhite/90 backdrop-blur-md border-b border-brand-forest/10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-brand-forest text-brand-offwhite font-serif italic font-bold flex items-center justify-center text-xl shadow-sm">
+          CB
+        </div>
+        <div>
+          <span class="block font-serif text-xl leading-tight font-semibold tracking-wide">Campelo Branding</span>
+          <span class="block text-[10px] font-sans tracking-widest text-brand-muted uppercase">Design & Marketing</span>
+        </div>
+      </div>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#sobre" class="hover:text-brand-muted transition-colors">Sobre</a>
+        <a href="#projetos" class="hover:text-brand-muted transition-colors">Projetos</a>
+        <a href="#mentoria" class="hover:text-brand-muted transition-colors">Mentoria</a>
+      </nav>
+
+      <a href="https://instagram.com/campelo_branding" target="_blank" rel="noopener noreferrer" 
+         class="inline-flex items-center gap-2 bg-brand-forest text-brand-offwhite px-4 py-2 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-opacity-90 transition-all shadow-sm">
+        <i data-lucide="instagram" class="w-4 h-4"></i>
+        <span>@campelo_branding</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+    <!-- HERO / SOBRE MIM -->
+    <section id="sobre" class="pt-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-forest/5 text-brand-forest text-xs font-semibold tracking-wider uppercase mb-6">
+        <span>ESTUDANTE</span>
+        <span class="text-brand-muted">•</span>
+        <span class="font-serif italic font-bold text-sm">1/3</span>
+      </div>
+
+      <h1 class="font-serif text-5xl md:text-7xl font-normal leading-[1.1] mb-8 max-w-3xl">
+        Aprender, criar e evoluir na prática.
+      </h1>
+
+      <div class="grid md:grid-cols-12 gap-8 items-start">
+        <div class="md:col-span-7 space-y-6 text-base text-brand-forest/90 leading-relaxed font-light">
+          <p>
+            Olá! Sou a <strong>Isadora Campelo</strong>. A <strong>Campelo Branding</strong> nasce como o meu laboratório criativo e portfólio digital, onde documento cada etapa dos meus estudos práticos nas áreas de Design Gráfico, Branding e Marketing.
+          </p>
+          <p>
+            Com a orientação e mentoria da professora 
+            <a href="https://instagram.com/amandalima.adm" target="_blank" class="underline underline-offset-4 font-medium hover:text-brand-muted">
+              Amanda Lima (@amandalima.adm)
+            </a>, busco transformar conceitos teóricos em projetos com identidade visual autêntica e propósito.
+          </p>
+          <div class="p-6 rounded-2xl bg-brand-card border border-brand-forest/10 shadow-sm space-y-3">
+            <i data-lucide="quote" class="w-6 h-6 text-brand-forest/40"></i>
+            <p class="font-serif italic text-xl text-brand-forest">
+              "Acredite em si mesmo e em todo o seu potencial. Saiba que você é capaz de realizar qualquer coisa que decidir fazer."
+            </p>
+          </div>
+        </div>
+
+        <!-- BLOCO MENTORIA -->
+        <div id="mentoria" class="md:col-span-5 bg-brand-forest text-brand-offwhite p-8 rounded-3xl shadow-xl relative overflow-hidden">
+          <div class="absolute -right-6 -bottom-6 text-brand-offwhite/5 font-serif italic text-9xl select-none">
+            1/3
+          </div>
+          <div class="relative z-10 space-y-4">
+            <span class="text-xs tracking-widest text-brand-offwhite/60 uppercase font-semibold">Dedicatória de Mentoria</span>
+            <h3 class="font-serif text-2xl font-light">Professora Amanda Lima</h3>
+            <p class="text-sm text-brand-offwhite/80 leading-relaxed font-light">
+              "A verdadeira mentoria vai muito além de ensinar técnicas; é acender a coragem para dar o primeiro passo e mostrar que somos capazes de criar o nosso próprio caminho. Obrigada, professora Amanda, por seres essa inspiração constante."
+            </p>
+            <div class="pt-4 border-t border-brand-offwhite/10 flex items-center gap-2 text-xs text-brand-offwhite/60">
+              <i data-lucide="bookmark" class="w-4 h-4"></i>
+              <span>Marcador 1/3 — Aprendizado & Evolução Contínua</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="space-y-8">
+      <div>
+        <span class="text-xs font-semibold tracking-widest text-brand-muted uppercase">Portfólio & Estudos</span>
+        <h2 class="font-serif text-4xl font-normal mt-1">Projetos Práticos</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-forest/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="space-y-4">
+            <span class="text-[11px] font-semibold tracking-wider text-brand-muted uppercase bg-brand-offwhite px-2.5 py-1 rounded-full inline-block">Branding</span>
+            <h3 class="font-serif text-2xl">Marca Aurora</h3>
+            <p class="text-sm text-brand-forest/80 font-light leading-relaxed">
+              Desenvolvimento de identidade visual completa, logotipo, tipografia principal, paleta de cores e aplicações de marca.
+            </p>
+          </div>
+          <a href="https://instagram.com/campelo_branding" target="_blank" class="mt-6 inline-flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-brand-forest pt-4 border-t border-brand-forest/10 hover:text-brand-muted transition-colors">
+            <span>Quero algo assim</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-forest/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="space-y-4">
+            <span class="text-[11px] font-semibold tracking-wider text-brand-muted uppercase bg-brand-offwhite px-2.5 py-1 rounded-full inline-block">Design Gráfico</span>
+            <h3 class="font-serif text-2xl">Revista Luz</h3>
+            <p class="text-sm text-brand-forest/80 font-light leading-relaxed">
+              Projeto gráfico editorial com foco na diagramação, escolha tipográfica refinada, grids e ritmo de leitura visual.
+            </p>
+          </div>
+          <a href="https://instagram.com/campelo_branding" target="_blank" class="mt-6 inline-flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-brand-forest pt-4 border-t border-brand-forest/10 hover:text-brand-muted transition-colors">
+            <span>Quero algo assim</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-brand-card rounded-2xl p-6 border border-brand-forest/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="space-y-4">
+            <span class="text-[11px] font-semibold tracking-wider text-brand-muted uppercase bg-brand-offwhite px-2.5 py-1 rounded-full inline-block">Marketing</span>
+            <h3 class="font-serif text-2xl">Campanha Viva Leve</h3>
+            <p class="text-sm text-brand-forest/80 font-light leading-relaxed">
+              Planejamento estratégico de conteúdo digital, peças gráficas para redes sociais e métricas de engajamento.
+            </p>
+          </div>
+          <a href="https://instagram.com/campelo_branding" target="_blank" class="mt-6 inline-flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-brand-forest pt-4 border-t border-brand-forest/10 hover:text-brand-muted transition-colors">
+            <span>Quero algo assim</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION (CTA) -->
+    <section class="bg-brand-card rounded-3xl p-8 md:p-12 border border-brand-forest/10 text-center space-y-6 shadow-sm">
+      <span class="font-serif italic text-2xl text-brand-forest">Acompanhe os Bastidores</span>
+      <h2 class="font-serif text-3xl md:text-5xl">Veja o processo em tempo real</h2>
+      <p class="max-w-xl mx-auto text-sm text-brand-muted font-light leading-relaxed">
+        Partilho regularmente estudos de caso, testes de design e novidades no Instagram.
+      </p>
+      <a href="https://instagram.com/campelo_branding" target="_blank" rel="noopener noreferrer" 
+         class="inline-flex items-center gap-3 bg-brand-forest text-brand-offwhite px-6 py-3 rounded-full text-xs font-semibold tracking-wider uppercase hover:bg-opacity-90 transition-all shadow-md">
+        <i data-lucide="instagram" class="w-4 h-4"></i>
+        <span>Siga no Instagram</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="border-t border-brand-forest/10 py-8 bg-brand-offwhite">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-brand-muted font-light">
+      <p>© Campelo Branding — Por Isadora Campelo.</p>
+      <div class="flex items-center gap-2">
+        <span class="font-serif italic text-sm text-brand-forest">1/3</span>
+        <span>• Em constante evolução.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ASSISTENTE DE IA (WIDGET FLUTUANTE) -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <!-- Botão Flutuante -->
+    <button id="ai-toggle-btn" class="bg-brand-forest text-brand-offwhite p-4 rounded-full shadow-2xl hover:scale-105 transition-all flex items-center justify-center">
+      <i data-lucide="sparkles" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Caixa de Chat Corrigida -->
+    <div id="ai-chat-card" class="hidden fixed bottom-24 right-6 w-[320px] sm:w-[360px] h-[450px] bg-brand-card border border-brand-forest/15 rounded-3xl shadow-2xl overflow-hidden flex flex-col justify-between z-50">
+      
+      <!-- Topo -->
+      <div class="bg-brand-forest text-brand-offwhite p-4 flex items-center justify-between shrink-0">
+        <div class="flex items-center gap-2">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          <span class="font-serif text-lg">Assistente CB</span>
+        </div>
+        <button id="ai-close-btn" class="text-brand-offwhite/70 hover:text-brand-offwhite p-1">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Mensagens -->
+      <div id="ai-chat-messages" class="p-4 flex-1 overflow-y-auto space-y-3 text-xs leading-relaxed bg-brand-offwhite/50">
+        <div class="bg-brand-offwhite p-3 rounded-2xl text-brand-forest border border-brand-forest/10 max-w-[85%] shadow-sm">
+          Olá! Sou o assistente da <strong>Campelo Branding</strong>. Como posso ajudar com dúvidas sobre os projetos da Isadora ou a mentoria da Profe. Amanda?
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="p-3 border-t border-brand-forest/10 bg-brand-card flex gap-2 shrink-0">
+        <input id="ai-input" type="text" placeholder="Escreva aqui..." class="flex-1 bg-brand-offwhite text-xs px-4 py-2.5 rounded-full border border-brand-forest/15 focus:outline-none focus:border-brand-forest text-brand-forest">
+        <button id="ai-send-btn" class="bg-brand-forest text-brand-offwhite p-2.5 rounded-full hover:bg-opacity-90 transition-colors flex items-center justify-center">
+          <i data-lucide="send" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+
+    const toggleBtn = document.getElementById('ai-toggle-btn');
+    const closeBtn = document.getElementById('ai-close-btn');
+    const chatCard = document.getElementById('ai-chat-card');
+    const inputField = document.getElementById('ai-input');
+    const sendBtn = document.getElementById('ai-send-btn');
+    const messagesContainer = document.getElementById('ai-chat-messages');
+
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      chatCard.classList.toggle('hidden');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      chatCard.classList.add('hidden');
+    });
+
+    const responderAI = (texto) => {
+      const msgUser = document.createElement('div');
+      msgUser.className = 'bg-brand-forest text-brand-offwhite p-3 rounded-2xl text-xs max-w-[85%] ml-auto shadow-sm';
+      msgUser.textContent = texto;
+      messagesContainer.appendChild(msgUser);
+
+      inputField.value = '';
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+      setTimeout(() => {
+        const msgBot = document.createElement('div');
+        msgBot.className = 'bg-brand-offwhite p-3 rounded-2xl text-brand-forest max-w-[85%] border border-brand-forest/10 shadow-sm';
+        
+        const lower = texto.toLowerCase();
+        if (lower.includes('amanda') || lower.includes('mentora')) {
+          msgBot.innerHTML = 'A <strong>Professora Amanda Lima</strong> (@amandalima.adm) orienta a Isadora nos estudos práticos de Branding e Marketing!';
+        } else if (lower.includes('1/3') || lower.includes('marcador')) {
+          msgBot.innerHTML = 'O marcador <strong>1/3</strong> representa a constante aprendizagem e evolução contínua da Isadora!';
+        } else if (lower.includes('projeto') || lower.includes('trabalho')) {
+          msgBot.innerHTML = 'Você pode ver projetos como a <strong>Marca Aurora</strong>, a <strong>Revista Luz</strong> e a <strong>Campanha Viva Leve</strong> na secção de projetos!';
+        } else {
+          msgBot.innerHTML = 'Obrigado por interagir! Para acompanhar novidades e bastidores, visite o Instagram <a href="https://instagram.com/campelo_branding" target="_blank" class="underline font-semibold">@campelo_branding</a>.';
+        }
+        
+        messagesContainer.appendChild(msgBot);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+      }, 500);
+    };
+
+    sendBtn.addEventListener('click', () => {
+      if (inputField.value.trim()) responderAI(inputField.value.trim());
+    });
+    
+    inputField.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' && inputField.value.trim()) responderAI(inputField.value.trim());
+    });
+  </script>
+</body>
+</html>
